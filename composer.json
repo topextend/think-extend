@@ -1,36 +1,37 @@
 {
-    "type": "extend",
-    "name": "topextend/think-extend",
-    "license": "MIT",
-    "description": "ThinkPHP v6.0 Extend",
-    "authors": [
-      {
-        "name": "Jarmin",
-        "email": "edshop@qq.com"
-      }
+  "type": "extend",
+  "name": "topextend/think-extend",
+  "license": "MIT",
+  "description": "ThinkPHP v6.0 extend",
+  "authors": [
+    {
+      "name": "Jarmin",
+      "email": "edshop@qq.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1|^8.0",
+    "ext-gd": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-iconv": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "topthink/framework": "^6.0|^8.0"
+  },
+  "autoload": {
+    "files": [
+      "src/Common.php"
     ],
-    "require": {
-      "ext-gd": "*",
-      "ext-curl": "*",
-      "ext-json": "*",
-      "ext-iconv": "*",
-      "ext-mbstring": "*",
-      "topthink/framework": "^6.0"
-    },
-    "autoload": {
-      "files": [
-        "src/Common.php"
-      ],
-      "psr-4": {
-        "think\\admin\\": "src"
-      }
-    },
-    "extra": {
-      "think": {
-        "services": [
-          "think\\admin\\Extend"
-        ]
-      }
+    "psr-4": {
+      "think\\admin\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "think\\admin\\Extend"
+      ]
     }
   }
-  
+}
